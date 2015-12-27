@@ -1,5 +1,9 @@
 class Converter
   def decimal_to_roman(decimal)
-    "I" * decimal
+    if decimal == 5
+      "V"
+    else
+      "I" * decimal
+    end
   end
 end
