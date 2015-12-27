@@ -31,5 +31,17 @@ RSpec.describe Converter do
     it { expect(roman_to_decimal("D")).to eq 500  }
     it { expect(roman_to_decimal("CM")).to eq 900 }
     it { expect(roman_to_decimal("M")).to eq 1000 }
+
+    it "CCCXXXIX to 339" do
+      expect(roman_to_decimal("CCCXXXIX")).to eq 339
+    end
+
+    it "MCMLXXXVII to 1987" do
+      expect(roman_to_decimal("MCMLXXXVII")).to eq 1987
+    end
+
+    it "MCMXCIX to 1999" do
+      expect(roman_to_decimal("MCMXCIX")).to eq 1999
+    end
   end
 end
